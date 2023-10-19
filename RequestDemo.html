@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MakTix</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/ud-styles.css" />
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/css/demo.min.css" />
+  <link rel="stylesheet" href="assets/css/RequestDemo.css"/>
+
+</head>
+<body class="Request_Demo"  ng-app="myApp" ng-controller="myCtrl" ng-init="ChooseDate(); GetPageLoadData();">
+  <!-- ====== Hero Start ====== -->
+  <header class="ud-header">
+    <div class="container">
+      <div class="row">
+        <div class="nav-bar-padding">
+          <nav class="navbar navbar-expand-lg ">
+            <a class="brand-image" style="padding:0px; line-height:0px" href="index.html">
+              <div class="logo">
+                <div class="logo-heading">Logistics Technology Partner</div>
+              </div>
+            </a>
+            <button class="navbar-toggler">
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+            </button>
+
+            <div class="navbar-collapse">
+              <ul id="nav" class="navbar-nav m-l-auto">
+                <li class="nav-item nav-home">
+                  <a class="navbar-brand" href="index.html">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="ud-menu-scroll" href="#Features">features</a>
+                </li> -->
+                <li class="nav-item nav-home features">
+                  <a href="#">Services<span class="caret"></span></a>
+                  <ul class="Sub-Nav">
+                    <li><a href="logistics.html">Logistics Technology Tools</a></li>
+                    <li><a href="ai.html">AI</a></li>
+                    <li><a href="machineLearning.html">Machine Learning</a></li>
+                    <li><a href="cloud.html">Cloud</a></li>
+                    <li><a href="dataAnalytics.html">Data Analytics</a></li>
+                    <li><a href="professionalServices.html">Professional Services</a></li>
+					<li><a href="salesforceServices.html">Salesforce Services</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-home features">
+                  <a href="#">Product Features<span class="caret"></span></a>
+                  <ul class="Sub-Nav">
+                    <li><a href="tms.html#loadSourcing">Load Sourcing</a></li>
+                    <li><a href="tms.html#mobileApp">Mobile App</a></li>
+                    <li><a href="crm.html#customer">Customer & Vendor Management</a></li>
+                    <li><a href="crm.html#reporting">Reporting & Collaboration</a></li>
+                    <li><a href="financials.html#invoice">Invoice Management</a></li>
+                    <li><a href="financials.html#payroll">Payroll Management</a></li>
+                    <li><a href="financials.html#driver">Driver Settlement</a></li>
+                    <!--<li><a href="dashboards.html">Dashboards</a></li>
+                    <li><a href="pricebook.html">Price Book</a></li>-->
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-brand" href="leadership.html">Our Leadership</a>
+                </li>
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="#about">About</a>
+                </li>
+
+
+              </ul>
+              <button class="nav-btn1 brand-image">
+                <li type="Button" class="nav-item">
+                  <a href="RequestDemo.html" style="color: white;">Contact Us</a>
+                </li>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="ud-hero  ai" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+            <h1 class="ud-hero-title">Contact MakTix Team</span></h1>
+            <ul class="ud-hero-buttons">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Hero End ====== -->
+  <section id="features" class="ud-features">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-sm-12">
+          <img src="./assets/images/logo/Lodx_Logo.png"></br>
+          <h3 class="ud-feature-title">Schedule a Time </h3>
+          <p class="ud-feature-desc">
+            We are committed to delivering exceptional technology solutions that help businesses thrive in today's digital landscape. 
+                With a track record of successfully serving diverse clients across various industries, we bring a wealth of technical expertise,
+                 project management skills, and client relationship management to deliver value-added services that exceed customer expectations.</p>
+      </div>
+        <div class="col-xl-8 col-lg-8 col-sm-12">
+          <div class="form_wrapper">
+            <div class="form_container">
+              <div class="title_container">
+                <h2> Contact Us</h2>
+              </div>
+
+              <div class="row clearfix">
+                <div class="">
+                    <div class="row clearfix">
+                      <div class="col_half">
+                        <label>First Name</label> 
+                        <div class="input_field"> 
+                          <input type="text" name="name"  required ng-model="firstName" ng-disabled = "flag == 1"/>
+                        </div>
+                      </div>
+                      <div class="col_half">
+                        <label>Last Name</label> 
+                        <div class="input_field"> 
+                          <input type="text" name="name" required ng-model="lastName" ng-disabled = "flag == 1"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="col_half">
+                        <label>Company Name</label>
+                        <div class="input_field"> 
+                          <input type="text" name="companyname"  required ng-model="companyName" ng-disabled = "flag == 1" />
+                        </div>
+                      </div>
+                      <div class="col_half">
+                        <label>Current TMS</label>
+                        <div class="input_field"> 
+                          <input type="text" name="currentTMSSystem"  ng-model="currentTMSSystem"  ng-disabled = "flag == 1"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="col_half">
+                        <label>Email</label>
+                        <div class="input_field"> 
+                          <input type="email" name="email"  required ng-model="email"  ng-disabled = "flag == 1"/>
+                        </div>
+                      </div>
+                      <div class="col_half">
+                        <label>Mobile Number</label>
+                        <div class="input_field"> 
+                          <input type="number" name="phoneNumber"  required ng-model="phoneNumber"  ng-disabled = "flag == 1"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="col_half">
+                        <label>Company Size</label>
+                        <div class="input_field"> 
+                          <input type="text" name="companysize" required ng-model="companySize"  ng-disabled = "flag == 1"/>
+                        </div>
+                      </div>
+                      <div class="col_half">
+                        <label>Date</label>
+                        <div class="input_field"> 
+                          <input type="date" id="currentDate" min="{{TodayDate | date:'yyyy-MM-dd'}}" name="Date" ng-change="ChooseDate1()" placeholder="Date" required ng-model="date"  ng-disabled = "flag == 1"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div> 
+                      <div class="row TimeDiv1">
+                        <div ng-repeat="m in ConstDatesList" class="TimeDiv col-3">
+                            <button ng-if="m.flag == 1" disabled>{{m.time}}</button>
+                            <button ng-if="m.flag == 0" ng-click="SelectedTime(m.time)" >{{m.time}}</button>
+                          </div>  
+                      </div>
+                    </div>
+                    <!-- <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                    </div>
+                     <div class="input_field select_option">
+                      <select ng-model="filterCondition.m">
+                        <option ng-repeat="m in DatesList" name="Select date" value="{{m.value}}">{{m.date}} </option>
+                     </select>
+                      <div class="select_arrow"></div>
+                    </div> -->
+                    <!-- <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                      <input type="password" name="password" placeholder="Password" required />
+                    </div>
+                       <div class="input_field radio_option">
+                        <input type="radio" name="radiogroup1" id="rd1">
+                        <label for="rd1">Male</label>
+                        <input type="radio" name="radiogroup1" id="rd2">
+                        <label for="rd2">Female</label>
+                        </div> -->
+                        <!-- <div class="input_field select_option">
+                          <select>
+                            <option>Select a country</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            Current TMS *
+                          </select>
+                          <div class="select_arrow"></div>
+                        </div> -->
+                        <div class="ErrorDiv" style="padding-bottom: 10px;">
+                          <span class="ErrorSpan">{{ErrorMessage}} </span>
+                        </div>
+                      <div ng-if="flag == 0">
+                        <button type="submit"  class="button"  ng-click="submit()"  ng-disabled="loading === true" >Request a call <i ng-if="loading" class="fa fa-spinner fa-spin" style="font-size:24px"></i></button>
+                      </div>
+                      <div ng-if="flag == 1">
+                        <input type="submit"  class="button"  ng-click="submit()" value="Accept" />
+                        <input type="submit"  class="button"  ng-click="submit()" value="Cancel" />
+                      </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <p class="credit">Developed by MakTix<a href="http://www.designtheway.com" target="_blank"></a></p>
+          <!-- Design the way -->
+          </div>
+        </div>
+      
+      </div>
+     
+  </section>
+
+  <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s"
+  style="visibility: visible; animation-delay: 0.15s; animation-name: fadeInUp;">
+  <div class="row align-items-center">
+    <div class="ud-contact-content-wrapper">
+      <div class="ud-contact-info-wrapper">
+        <div class="ud-single-info footer-logo">
+          <div class="ud-info-meta">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/logo/Lodx_Logo.png" alt="Logo">
+            </a>
+          </div>
+        </div>
+        <div class="ud-single-info">
+          <!-- <div class="ud-info-icon">
+              <i class="lni lni-envelope"></i>
+            </div> -->
+          <div class="ud-info-meta">
+            <h5>Our Services</h5>
+            <p><a href="logistics.html">Logistics Tools</a></p>
+            <p><a href="ai.html">AI</a></p>
+            <p><a href="machineLearning.html">Machine Learning</a></p>
+            <p><a href="cloud.html">Cloud</a></p>
+            <p><a href="dataAnalytics.html">Data Anaylatics</a></p>
+            <p><a href="professionalServices.html">Professional Services</a></p>
+			<p><a href="salesforceServices.html">Salesforce Services</a></p>
+          </div>
+        </div>
+        <div class="ud-single-info">
+          <!-- <div class="ud-info-icon">
+              <i class="lni lni-phone"></i>
+            </div> -->
+          <div class="ud-info-meta">
+            <h5>Product Features</h5>
+            <p><a href="tms.html#loadSourcing">Load Sourcing</a></p>
+            <p><a href="tms.html#mobileApp">Mobile App</a></p>
+            <p><a href="crm.html#customer">Customer & Vendor Management</a></p>
+            <p><a href="crm.html#reporting">Reporting & Collaboration</a></p>
+            <p><a href="financials.html#invoice">Invoice Management</a></p>
+            <p><a href="financials.html#payroll">Payroll Management</a></p>
+            <p><a href="financials.html#driver">Driver Settlement</a></p>
+          </div>
+        </div>
+        <div class="ud-single-info">
+          <!-- <div class="ud-info-icon">
+              <i class="lni lni-phone"></i>
+            </div> -->
+          <div class="ud-info-meta">
+            <h5>Our Company</h5>
+            <p><a href="leadership.html">Our Leadership</a></p>
+            <p><a href="index.html#about">About Us</a></p>
+            <p><a href="RequestDemo.html">Contact Us</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row Copyright">
+      <div class="col-md-12 copyright-text-padding">
+        <h6>Copyright© 2023 by MakTix. All Rights Reserved</h6>
+        <h6> <a href="assets/Files/PrivacyPolicy.html" style="text-align: Center;">Privacy Policy</a></h6>
+      </div>
+      <div class="privacy-text-div">
+        <hr>
+        <p class="privacy-text">MakTix reserves the right to change this Privacy Policy from time to time. We will
+          notify you about significant changes in the way we treat personal information by sending a notice to the
+          primary email address specified in your account, by placing a prominent notice on our application, and/or
+          by updating any privacy information. Your continued use of the application and/or Services available after
+          such modifications will constitute your: (a) acknowledgment of the modified Privacy Policy; and (b)
+          agreement to abide and be bound by that Policy.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- ====== All Javascript Files ====== -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/angular.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/demo.js"></script>
+  <script src="assets/js/script.js"></script>
+    <!-- ====== All Javascript Files ====== -->
+
+
+    <script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (refElement &&
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+
+      window.onscroll = function () {
+        const ud_header = document.querySelector(".ud-header");
+        const sticky = ud_header.offsetTop;
+        const logo = document.querySelector(".navbar-brand img");
+
+        if (window.pageYOffset > sticky) {
+          ud_header.classList.add("sticky");
+        } else {
+          ud_header.classList.remove("sticky");
+        }
+
+        // === logo change
+        // if (ud_header.classList.contains("sticky")) {
+        //   logo.src = "assets/images/logo/logo-2.svg";
+        // } else {
+        //   logo.src = "assets/images/logo/logo.svg";
+        // }
+
+        // show or hide the back-top-top button
+        
+      };
+
+      //===== close navbar-collapse when a  clicked
+      let navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+
+      document.querySelectorAll(".ud-menu-scroll").forEach((e) =>
+        e.addEventListener("click", () => {
+          navbarToggler.classList.remove("active");
+          navbarCollapse.classList.remove("show");
+        })
+      );
+      navbarToggler.addEventListener("click", function () {
+        navbarToggler.classList.toggle("active");
+        navbarCollapse.classList.toggle("show");
+      });
+
+      // ===== submenu
+      const submenuButton = document.querySelectorAll(".nav-item-has-children");
+      submenuButton.forEach((elem) => {
+        elem.querySelector("a").addEventListener("click", () => {
+          elem.querySelector(".ud-submenu").classList.toggle("show");
+        });
+      });
+
+      // ===== wow js
+      new WOW().init();
+
+      // ====== scroll top js
+      function scrollTo(element, to = 0, duration = 500) {
+        const start = element.scrollTop;
+        const change = to - start;
+        const increment = 20;
+        let currentTime = 0;
+
+        const animateScroll = () => {
+          currentTime += increment;
+
+          const val = Math.easeInOutQuad(currentTime, start, change, duration);
+
+          element.scrollTop = val;
+
+          if (currentTime < duration) {
+            setTimeout(animateScroll, increment);
+          }
+        };
+
+        animateScroll();
+      }
+
+      Math.easeInOutQuad = function (t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      };
+
+
+
+
+      $('.counting').each(function () {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+
+        $({ countNum: $this.text() }).animate({
+          countNum: countTo
+        },
+
+          {
+
+            duration: 3000,
+            easing: 'linear',
+            step: function () {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              $this.text(this.countNum);
+              //alert('finished');
+            }
+
+          });
+
+
+      });
+    </script>
+</body>
+
+</html>
